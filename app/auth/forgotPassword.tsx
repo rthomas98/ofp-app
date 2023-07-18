@@ -10,12 +10,9 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { Link } from 'expo-router'
-
-const LogIn = () => {
+const forgotPasssword = () => {
 
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
 
   return (
     <KeyboardAvoidingView
@@ -24,7 +21,8 @@ const LogIn = () => {
        <View style={styles.logoContainer}>
           <Image style={styles.logo} source={require('../../assets/ofp-big-logo.png')} />
         </View>
-        <Text style={styles.contentTitle}>Sign in to your account</Text>
+        <Text style={styles.contentTitle}>Forgot Your Password</Text>
+        <Text style={styles.contentText}>Enter your email address below and we'll send you a link to reset your password.</Text>
       <View style={styles.inputContainer}>
         
         <TextInput
@@ -36,34 +34,18 @@ const LogIn = () => {
         />
       </View>
 
-      <View style={styles.inputContainer}>
-        
-        <TextInput
-          style={styles.inputs}
-          placeholder="Password"
-          secureTextEntry={true}
-          underlineColorAndroid="transparent"
-          onChangeText={setPassword}
-        />
-      </View>
 
       <TouchableOpacity activeOpacity={0.7}>
                 <View style={styles.button}>
-                    <Link style={styles.buttonText} href={'/home/'}>
-                    Login
+                    <Link style={styles.buttonText} href={'/auth/resetPassword'}>
+                    Reset My Password
                     </Link>
                 </View>
             </TouchableOpacity>
 
 
-      <Link href={'/auth/forgotPassword'}>
-        <Text>Forgot your Password?</Text>
-      </Link>
-
-      <Text style={styles.contentText}>Don't have an account?</Text>
-
-      <Link href={'/auth/signUp'}>
-        <Text style={styles.linkText}>Sign up</Text>
+      <Link href={'/auth/'}>
+        <Text style={styles.linkText}>Cancel</Text>
       </Link>
 
   
@@ -71,10 +53,9 @@ const LogIn = () => {
   )
 }
 
-export default LogIn
+export default forgotPasssword
 
 const styles = StyleSheet.create({
-
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -145,8 +126,8 @@ const styles = StyleSheet.create({
   contentText: {
     color: '#09101D',
     fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: 10,
+    marginVertical: 20,
+    textAlign: 'center',
   },
   linkText: {
     color: '#FF1843',
