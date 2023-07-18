@@ -47,13 +47,11 @@ const LogIn = () => {
         />
       </View>
 
-      <TouchableOpacity activeOpacity={0.7}>
-                <View style={styles.button}>
-                    <Link style={styles.buttonText} href={'/home/'}>
-                    Login
-                    </Link>
-                </View>
-            </TouchableOpacity>
+        <View style={styles.button}>
+            <Link style={styles.buttonText} href={'/home/'}>
+            Login
+            </Link>
+        </View>
 
 
       <Link href={'/auth/forgotPassword'}>

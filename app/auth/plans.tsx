@@ -54,13 +54,11 @@ const plans = () => {
         <Text style={styles.monthly}>monthly</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity activeOpacity={0.7}>
-                <View style={styles.button}>
-                    <Link style={styles.buttonText} href={'/profileSetup/'}>
-                        Create An Account
-                    </Link>
-                </View>
-            </TouchableOpacity>
+      <View style={styles.button}>
+          <Link style={styles.buttonText} href={'/profileSetup/'}>
+              Create An Account
+          </Link>
+      </View>
 
             <Link href={'/auth/'}>
         <Text>Cancel</Text>
@@ -95,7 +93,6 @@ const styles = StyleSheet.create({
   logo: {
     width: '100%',
     resizeMode: 'contain',
-    textAlign: 'center',
   },
   contentTitle: {
     fontSize: 28,

@@ -1,12 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import ImageSlider from '../components/imageSlider'
+import { Link } from 'expo-router'
+import { ScrollView } from 'react-native-gesture-handler'
+
 
 const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <ImageSlider />
-    </View>
+    <ScrollView style={styles.container}>
+        <ImageSlider />
+        <Link href={'/auth/'}>
+        <Text>Home</Text>
+      </Link>
+      </ScrollView>
   )
 }
 

@@ -10,9 +10,11 @@ import {
   TouchableOpacity
 } from 'react-native'
 import { Link } from 'expo-router'
-const forgotPasssword = () => {
 
-  const [email, setEmail] = useState('');
+
+const forgotPasssword = () => {
+  
+const [email, setEmail] = useState('');
 
   return (
     <KeyboardAvoidingView
@@ -34,14 +36,11 @@ const forgotPasssword = () => {
         />
       </View>
 
-
-      <TouchableOpacity activeOpacity={0.7}>
-                <View style={styles.button}>
-                    <Link style={styles.buttonText} href={'/auth/resetPassword'}>
-                    Reset My Password
-                    </Link>
-                </View>
-            </TouchableOpacity>
+      <View style={styles.button}>
+          <Link style={styles.buttonText} href={'/auth/resetPassword'}>
+          Reset My Password
+          </Link>
+      </View>
 
 
       <Link href={'/auth/'}>
