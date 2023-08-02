@@ -51,6 +51,7 @@ export default class UserStories extends Component {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    backgroundColor: '#FFFFFF',
   },
   header: {
     fontSize: 24,
