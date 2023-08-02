@@ -5,6 +5,7 @@ import WalletBalance from '../components/walletBalance'
 import TopChallenges from '../components/topChallenges'
 import EndingSoonChallenges from '../components/endingSoon'
 import UserStories from '../components/userStories'
+import SearchForm from '../components/searchForm'
 
 import { Link } from 'expo-router'
 import { ScrollView } from 'react-native-gesture-handler'
@@ -13,6 +14,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 const HomeScreen = () => {
   return (
     <ScrollView style={styles.container}>
+        <SearchForm />
         <UserStories />
         <WalletBalance />
         <CategorySlider />

@@ -39,9 +39,9 @@ const DonationListScreen = () => {
         <Tab.Screen name="My Fundraising" component={MyFundraising} />
         <Tab.Screen name="Activity" component={Activity} />
       </Tab.Navigator>
-      <Link href={'/auth/forgotPassword'} style={styles.fab}>
+      <TouchableOpacity style={styles.fab}>
         <Ionicons name="add" size={30} color="#FFFFFF" />
-      </Link>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     bottom: 30,
     width: 60,
     height: 60,
-    borderRadius: 30,
+    borderRadius: 50,
     backgroundColor: '#000000',
     justifyContent: 'center',
     alignItems: 'center',
