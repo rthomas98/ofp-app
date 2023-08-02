@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { ScrollView } from 'react-native-gesture-handler';
+import { Link } from 'expo-router'
 
 import MyChallenges from '../components/myChallenges';
 import DonationCalendar from '../components/donationsCalender';
@@ -38,9 +39,9 @@ const DonationListScreen = () => {
         <Tab.Screen name="My Fundraising" component={MyFundraising} />
         <Tab.Screen name="Activity" component={Activity} />
       </Tab.Navigator>
-      <TouchableOpacity style={styles.fab}>
+      <Link href={'/auth/forgotPassword'} style={styles.fab}>
         <Ionicons name="add" size={30} color="#FFFFFF" />
-      </TouchableOpacity>
+      </Link>
     </View>
   );
 };
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: '#FF1843',
+    backgroundColor: '#000000',
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 10, // for Android
