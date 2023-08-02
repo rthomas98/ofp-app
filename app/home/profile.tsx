@@ -1,26 +1,34 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { ScrollView } from 'react-native-gesture-handler'
+import React from 'react';
+import { StyleSheet, View, FlatList } from 'react-native';
 
-import ProfileHeader from '../components/profile/profileHeader'
-import WalletBalance from '../components/walletBalance'
-import UserDetails from '../components/profile/userDetails'
+import ProfileHeader from '../components/profile/profileHeader';
+import WalletBalance from '../components/walletBalance';
+import UserDetails from '../components/profile/userDetails';
 
 const ProfileScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <ProfileHeader />
+  const renderHeader = () => (
+    <View>
       <WalletBalance />
-      <UserDetails />
-    </ScrollView>
-  )
-}
+      <ProfileHeader />
+    </View>
+  );
 
-export default ProfileScreen
+  return (
+    <FlatList
+      style={styles.container}
+      ListHeaderComponent={renderHeader}
+      data={[<UserDetails />]}
+      renderItem={({ item }) => item}
+      keyExtractor={(item, index) => index.toString()}
+    />
+  );
+};
+
+export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
   },
-})
+});

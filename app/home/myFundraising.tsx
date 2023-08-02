@@ -1,28 +1,34 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { StyleSheet, View, FlatList } from 'react-native';
 
-import CategorySlider from '../components/categoriesSlider'
-import SearchForm from '../components/searchForm'
-import MyFundraising from '../components/myFundraising'
-import { ScrollView } from 'react-native-gesture-handler'
+import CategorySlider from '../components/categoriesSlider';
+import SearchForm from '../components/searchForm';
+import MyFundraising from '../components/myFundraising';
 
 const MyFundraisingScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={{padding: 20}}>
+  const renderHeader = () => (
+    <View style={{ padding: 20 }}>
       <SearchForm />
-      </View>
       <CategorySlider />
-      <MyFundraising />
-    </ScrollView>
-  )
-}
+    </View>
+  );
 
-export default MyFundraisingScreen
+  return (
+    <FlatList
+      style={styles.container}
+      ListHeaderComponent={renderHeader}
+      data={[<MyFundraising />]}
+      renderItem={({ item }) => item}
+      keyExtractor={(item, index) => index.toString()}
+    />
+  );
+};
+
+export default MyFundraisingScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-  }
-})
+  },
+});

@@ -84,19 +84,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   interestPill: {
-    backgroundColor: '#FF1843',
+    backgroundColor: '#ffffff',
     paddingHorizontal: 15,
+    borderWidth: 1,
+    borderColor: '#FF1843',
     paddingVertical: 8,
     borderRadius: 20,
     marginRight: 10,
   },
   interestText: {
-    color: 'white',
+    color: '#FF1843',
     fontSize: 14,
   },
   tabView: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

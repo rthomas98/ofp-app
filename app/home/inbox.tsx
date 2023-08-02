@@ -1,28 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Link } from 'expo-router'
+import React from 'react';
+import { StyleSheet, View, FlatList } from 'react-native';
+import { Link } from 'expo-router';
 
-import InBoxList from '../components/inBoxList'
-import SearchForm from '../components/searchForm'
-import { ScrollView } from 'react-native-gesture-handler'
-
+import InBoxList from '../components/inBoxList';
+import SearchForm from '../components/searchForm';
 
 const InboxScreen = () => {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={{padding: 20}}>
+  const renderHeader = () => (
+    <View style={{ padding: 20 }}>
       <SearchForm />
-      </View>
-        <InBoxList />
-    </ScrollView>
-  )
-}
+    </View>
+  );
 
-export default InboxScreen
+  return (
+    <FlatList
+      style={styles.container}
+      ListHeaderComponent={renderHeader}
+      data={[<InBoxList />]}
+      renderItem={({ item }) => item}
+      keyExtractor={(item, index) => index.toString()}
+    />
+  );
+};
+
+export default InboxScreen;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-  }
-})
+  },
+});
