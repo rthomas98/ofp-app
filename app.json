@@ -2,11 +2,11 @@
   "expo": {
     "name": "OnlyForProfessionals",
     "slug": "OnlyForProfessionals",
+    "description": "Only For Professionals is a unique app that connects challenges, professionals, and philanthropy. Join our thriving community, participate in exciting challenges, and donate to make a real impact. While having fun doing it!",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "scheme": "OnlyForProfessionals",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -28,7 +28,17 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": [
-    ]
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "45514793-ca2a-4a8b-9209-fe6041e3be45"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/45514793-ca2a-4a8b-9209-fe6041e3be45"
+    }
   }
 }
