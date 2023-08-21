@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 
-const categories = ['Category 1', 'Category 2', 'Category 3', 'Category 4', 'Category 5'];
+const categories = ['Fitness and Sports', 'Sports Challenges', 'Cooking and Baking', 'Outdoor Adventures', 'Gardening and Sustainability', 'DIY and Crafts', 'Reading and Writing', 'Home Organization', 'Art and Culture', 'Fashion and Style', 'Mindfulness and Yoga'];
 
 export default class CategorySlider extends Component {
   renderCategoryItem = ({ item }) => (

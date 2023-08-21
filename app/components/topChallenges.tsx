@@ -5,7 +5,7 @@ const challenges = [
     { 
       id: '1', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_693609082.jpg', 
-      title: 'Challenge 1', 
+      title: 'Soccer Challenge', 
       progress: 0.6, 
       donors: 50, 
       remainingDays: 10 
@@ -13,7 +13,7 @@ const challenges = [
     { 
       id: '2', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_1051726556.jpg', 
-      title: 'Challenge 2', 
+      title: 'Game Night Fun Challenge', 
       progress: 0.8, 
       donors: 70, 
       remainingDays: 15 
@@ -21,7 +21,7 @@ const challenges = [
     { 
       id: '3', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_289007207.jpg', 
-      title: 'Challenge 3', 
+      title: 'Beach Swimming Challenge', 
       progress: 0.3, 
       donors: 30, 
       remainingDays: 20 
@@ -29,7 +29,7 @@ const challenges = [
     { 
       id: '4', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_1218668554.jpg', 
-      title: 'Challenge 4', 
+      title: 'Kareoke Night Challenge', 
       progress: 0.9, 
       donors: 90, 
       remainingDays: 5 
@@ -37,7 +37,7 @@ const challenges = [
     { 
       id: '5', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_489319558.jpg', 
-      title: 'Challenge 5', 
+      title: 'Pool Shark Challenge', 
       progress: 0.5, 
       donors: 50, 
       remainingDays: 10 
@@ -45,7 +45,7 @@ const challenges = [
     { 
       id: '6', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_2199248593.jpg', 
-      title: 'Challenge 6', 
+      title: 'Jinga NIght Challenge', 
       progress: 0.7, 
       donors: 70, 
       remainingDays: 15 
@@ -53,7 +53,7 @@ const challenges = [
     { 
       id: '7', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_1072474205.jpg', 
-      title: 'Challenge 7', 
+      title: 'Iphone Game Challenge', 
       progress: 0.2, 
       donors: 20, 
       remainingDays: 20 
@@ -61,7 +61,7 @@ const challenges = [
     { 
       id: '8', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_393880156.jpg', 
-      title: 'Challenge 8', 
+      title: '1 Mile Run Challenge', 
       progress: 0.1, 
       donors: 10, 
       remainingDays: 30 
@@ -69,7 +69,7 @@ const challenges = [
     { 
       id: '9', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_565003417.jpg', 
-      title: 'Challenge 9', 
+      title: 'Hanging Out Challenge', 
       progress: 0.4, 
       donors: 40, 
       remainingDays: 15 
@@ -77,7 +77,7 @@ const challenges = [
     { 
       id: '10', 
       image: 'https://empuls3.com/wp-content/uploads/2023/07/shutterstock_1212860350.jpg', 
-      title: 'Challenge 10', 
+      title: 'Basketball Game Challenge', 
       progress: 0.5, 
       donors: 50, 
       remainingDays: 10 
