@@ -32,7 +32,7 @@ const plans = () => {
           onPress={() => handleSelect('basic')}
         >
        <Text style={styles.basicheader}>Individual</Text>
-        <Text style={styles.price}>$150</Text>
+        <Text style={styles.price}>$9.99</Text>
         <Text style={styles.monthly}>monthly</Text>
       </TouchableOpacity>
 
@@ -41,7 +41,7 @@ const plans = () => {
         onPress={() => handleSelect('premium')}
       >
         <Text style={styles.premiumheader}>Organization</Text>
-        <Text style={styles.price}>$500</Text>
+        <Text style={styles.price}>$19.99</Text>
         <Text style={styles.monthly}>monthly</Text>
       </TouchableOpacity>
 
@@ -50,7 +50,7 @@ const plans = () => {
         onPress={() => handleSelect('pro')}
       >
         <Text style={styles.proheader}>Pro Membership</Text>
-        <Text style={styles.price}>$Professional</Text>
+        <Text style={styles.price}>$29.99</Text>
         <Text style={styles.monthly}>monthly</Text>
       </TouchableOpacity>
 
